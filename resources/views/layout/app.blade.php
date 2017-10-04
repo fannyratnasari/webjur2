@@ -61,7 +61,7 @@
     <footer class="page-footer orange">
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">S1 Teknik Informatika 2015</a>
+                Made by <a class="orange-text text-lighten-3" href="">S1 Teknik Informatika 2015</a>
             </div>
         </div>
     </footer>

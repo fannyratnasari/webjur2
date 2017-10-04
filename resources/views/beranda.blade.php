@@ -16,7 +16,7 @@
 
             </div>
         </div>
-        <div class="parallax"><img src="{{('image/unesa.jpg')}}" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 234px, 0px);"></div>
+        <div class="parallax"><img src="{{ asset('image/unesa.jpg') }}" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 234px, 0px);"></div>
     </div>
 
     <div class="container">
@@ -59,17 +59,17 @@
                     <h5 class="light header">Beasiswa PPA</h5>
                     <p class="caption">
                         Beasiswa PPA 2017 dan BPP PPA 2017 ditujukan bagi mahasiswa aktif yang berada di jenjang S1/DIV atau mahasiswa D3. Ketentuan lebih lanjut tertera di persyaratan.</p>
-                    <img width="100%" src={{("image/ppa.jpg")}} alt="">
+                    <img width="100%" src={{ asset("image/ppa.jpg") }} alt="">
                     <br><br>
-                    <a href="beasiswa" class="btn-large waves-effect waves-light" style="background-color: #2F4F4F">Baca</a>
+                    <a href="" class="btn-large waves-effect waves-light orange" >Baca</a>
                 </div>
                 <div class="col s6 ">
                     <h5 class="light header">Beasiswa BCA</h5>
                     <p class="caption">
                         Dalam upaya memajukan dunia pendidikan di Indonesia, BCA turut memberikan beasiswa kepada mahasiswa/mahasiswi berprestasi di bidangnya.</p>
-                        <img width="100%" src={{("image/BCA.jpg")}} alt="">
+                        <img width="100%" src={{ asset("image/BCA.jpg") }} alt="">
                     <br><br>
-                    <a href="http://materializecss.com/themes.html" class="btn-large waves-effect waves-light" style="background-color: #03a9f4">Baca</a>
+                    <a href="" class="btn-large waves-effect waves-light orange" >Baca</a>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
                 <div class="col s12 m6 l3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{("image/masade.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/masade.jpg") }} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -92,7 +92,7 @@
                 <div class="col s12 m6 l3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{("image/hmj.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/hmj.jpg") }} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -106,7 +106,7 @@
                 <div class="col s12 m6 l3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{("image/futsal.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/futsal.jpg") }} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -120,7 +120,7 @@
                 <div class="col s12 m6 l3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{("image/dialog.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/dialog.jpg") }} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -139,7 +139,7 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{("image/bi.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/bi.jpg") }} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -156,7 +156,7 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{("image/ppa.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/ppa.jpg")}} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -173,7 +173,7 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{("image/komatik.png")}} alt="blog-img">
+                            <img src={{ asset("image/komatik.png")}} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -190,5 +190,3 @@
     </div>
 
 @endsection
-
-
