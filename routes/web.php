@@ -11,10 +11,31 @@
 |
 */
 
-Route::get('/', function () {
-    return view('beranda');
-});
+Route::get('/', 'WebjurController@index');
+
 Route::get('/beasiswa', function () {
     return view('beasiswa');
 });
 
+Route::get('/sarpras', function () {
+    return view('sarpras');
+});
+
+Route::get('/coba', function () {
+    return view('coba');
+});
+
+Route::get('/beranda',[
+    'uses' => 'WebjurController@index',
+    'as' => 'webjur.beranda'
+]);
+
+Route::get('/sarpras',[
+    'uses' => 'SarprasController@show',
+    'as' => 'webjur.sarpras'
+]);
+
+Route::get('/info/beasiswa',[
+    'uses' => 'BeasiswaController@show',
+    'as' => 'webjur.beasiswa'
+]);

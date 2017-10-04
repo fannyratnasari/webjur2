@@ -16,8 +16,55 @@
 </head>
 <body>
 <div >
+    <div class="navbar-fixed">
+    <nav role="navigation" style="background-color: #02062c">
+        <div class="nav-wrapper container">
+            <img src="{{('image/ti.png')}}" height="70px" width="170px" class="brand-logo">
+            <ul class="right hide-on-med-and-down">
+                <li><a href="{{ route('webjur.beranda') }}">Beranda</a></li>
+                <li>
+                    <a class="dropdown-button active" href="#!" data-activates="dropdown1">Info
+                        <i class="material-icons right">arrow_drop_down</i></a>
+                    <ul id="dropdown1" class="dropdown-content active" style="width: 135.012px; position: absolute; top: 0px; left: 446.725px; display: block; opacity: 1;">
+                        <li><a href="{{ route('webjur.beasiswa') }}">Beasiswa</a></li>
+                        <li><a href="#">Kegiatan</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ route('webjur.sarpras') }}">Sarana dan Prasarana</a></li>
+                <li><a href="#">Tentang Jurusan</a></li>
+            </ul>
 
+            <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+                <li><a href="#">Beranda</a></li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-view-carousel"></i>Info</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#">Beasiswa</a>
+                                    </li>
+                                    <li><a href="#">Kegiatan</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Sarana dan Prasarana</a></li>
+                <li><a href="#">Tentang Jurusan</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    </div>
     @yield('content')
+    <footer class="page-footer orange">
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">S1 Teknik Informatika 2015</a>
+            </div>
+        </div>
+    </footer>
 </div>
 
 <!-- Scripts -->
@@ -26,7 +73,8 @@
 </script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/init.js"></script>
-{{--<script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>--}}
+<script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
 <script src="{{ asset('js/materialize.min.js') }}"></script>
+
 </body>
 </html>
