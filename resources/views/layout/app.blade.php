@@ -19,7 +19,7 @@
     <div class="navbar-fixed">
     <nav role="navigation" style="background-color: #02062c">
         <div class="nav-wrapper container">
-            <img src="{{('image/ti.png')}}" height="70px" width="170px" class="brand-logo">
+            <img src="{{ asset('image/ti.png') }}" height="70px" width="170px" class="brand-logo">
             <ul class="right hide-on-med-and-down">
                 <li><a href="{{ route('webjur.beranda') }}">Beranda</a></li>
                 <li>
@@ -71,9 +71,9 @@
 <script>
     $('.carousel.carousel-slider').carousel({fullWidth: true});
 </script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/init.js"></script>
-<script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+{{--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>--}}
+<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ asset('js/init.js') }}"></script>
 <script src="{{ asset('js/materialize.min.js') }}"></script>
 
 </body>

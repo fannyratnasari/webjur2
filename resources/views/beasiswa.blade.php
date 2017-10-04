@@ -5,7 +5,7 @@
                     <h5>BEASISWA PPA 2017</h5>
                     <div class="divider"></div><br>
                 </div>
-                <img src="{{('image/ppa.jpg')}}" width="1000" height="600"/>
+                <img src="{{ asset('image/ppa.jpg')}}" width="1000" height="600"/>
                 <p style="text-align: justify">
                     Pedoman Beasiswa Peningkatan Prestasi Akademik (PPA) Tahun 2017<br><br>
                     Yth. Pimpinan Perguruan Tinggi<br>
