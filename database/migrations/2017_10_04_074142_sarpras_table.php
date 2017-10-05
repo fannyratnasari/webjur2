@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableInfo extends Migration
+class SarprasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateTableInfo extends Migration
      */
     public function up()
     {
-        Schema::create('info', function (Blueprint $table) {
+        Schema::create('sarpras', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('judul');
+            $table->string('nama');
             $table->text('deskripsi');
-            $table->string('kategori');
             $table->text('foto');
         });
     }
