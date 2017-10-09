@@ -1,24 +1,117 @@
 @extends('layout.app')
 @section('content')
-            <div class="container">
-                <div class="section">
-                    <h5>BEASISWA PPA 2017</h5>
-                    <div class="divider"></div><br>
+    <div class="container">
+        <div class="section" style="text-align: center; font-family: sans-serif">
+            <h5>BEASISWA 2017</h5>
+            <div class="divider"></div><br>
+        </div>
+    <div class="row">
+        <!-- blog card -->
+        <div class="col s12 m12 l4">
+            <div class="blog-card" >
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src={{ asset("image/bi.jpg") }} alt="blog-img">
+                    </div>
+                    <div class="card-content">
+                        <p class="row">
+                            <span class="left"><a href="">Info</a></span>
+                            <span class="right">18th June, 2015</span>
+                        </p>
+                        <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Beasiswa Bank Indonesia</a>
+                        </h4>
+                    </div>
                 </div>
-                <img src="{{ asset('image/ppa.jpg')}}" width="1000" height="600"/>
-                <p style="text-align: justify">
-                    Pedoman Beasiswa Peningkatan Prestasi Akademik (PPA) Tahun 2017<br><br>
-                    Yth. Pimpinan Perguruan Tinggi<br>
-                    di Seluruh Indonesia<br><br>
-                    Bersama ini kami sampaikan bahwa  Direktorat Jenderal Pembelajaran dan Kemahasiswaan menyampaikan Pedoman Beasiswa Peningkatan Prestasi Akademik (PPA) tahun 2017 untuk menjadi bahan panduan bagi Perguruan Tinggi dalam memberikan beasiswa kepada mahasiswa yang mempunyai prestasi tinggi, baik kurikuler maupun ekstrakurikuler. Program beasiswa Peningkatan Prestasi Akademik (PPA) diharapkan dapat dilaksanakan sesuai dengan prinsip 3T, yaitu: Tepat Sasaran, Tepat Jumlah, dan Tepat Waktu.<br>
-                    Demikian kami sampaikan, atas perhatian dan kerjasamanya diucapkan terimakasih.<br><br>
-                    Direktur Kemahasiswaan<br>
-                    TTD<br><br><br>
-                    Didin Wahidin<br>
-                    Tembusan:
-                    Direktur Jenderal Pembelajaran dan Kemahasiswaan
-                </p>
-                <br><br>
             </div>
-
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="blog-card" >
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src={{ asset("image/ppa.jpg")}} alt="blog-img">
+                    </div>
+                    <div class="card-content">
+                        <p class="row">
+                            <span class="left"><a href="">Info</a></span>
+                            <span class="right">18th June, 2015</span>
+                        </p>
+                        <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Beasiswa PPA</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="blog-card" >
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src={{ asset("image/BCA.jpg")}} alt="blog-img">
+                    </div>
+                    <div class="card-content">
+                        <p class="row">
+                            <span class="left"><a href="">Info</a></span>
+                            <span class="right">18th June, 2015</span>
+                        </p>
+                        <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Beasiswa BCA Finance</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <!-- blog card -->
+            <div class="col s12 m12 l4">
+                <div class="blog-card" >
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{ asset("image/bidikmisi.jpg") }} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span class="left"><a href="">Info</a></span>
+                                <span class="right">18th June, 2015</span>
+                            </p>
+                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Beasiswa Bidikmisi</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="blog-card" >
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{ asset("image/djarum.jpg")}} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span class="left"><a href="">Info</a></span>
+                                <span class="right">18th June, 2015</span>
+                            </p>
+                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Djarum Beasiswa Plus</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="blog-card" >
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{ asset("image/dataprint.jpg")}} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span class="left"><a href="">Info</a></span>
+                                <span class="right">18th June, 2015</span>
+                            </p>
+                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Beasiswa DataPrint</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
