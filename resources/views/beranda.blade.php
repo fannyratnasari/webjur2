@@ -58,7 +58,7 @@
                         Beasiswa PPA 2017 dan BPP PPA 2017 ditujukan bagi mahasiswa aktif yang berada di jenjang S1/DIV atau mahasiswa D3. Ketentuan lebih lanjut tertera di persyaratan.</p>
                     <img width="100%" src={{ asset("image/ppa.jpg") }} alt="">
                     <br><br>
-                    <a href="" class="btn-large waves-effect waves-light orange" >Baca</a>
+                    <a href="beasiswa" class="btn-large waves-effect waves-light orange" >Baca</a>
                 </div>
                 <div class="col s6 ">
                     <h5 class="light header">Beasiswa BCA</h5>

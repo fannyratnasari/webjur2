@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{{ asset('css/materialize.css') }}" rel="stylesheet">
     {{--<link href="{{ asset('css/style.css') }}" rel="stylesheet">--}}
-</head>
+<php/head>
 <body>
 <div>
     <div class="navbar-fixed">
@@ -27,7 +27,7 @@
                                     class="material-icons right">arrow_drop_down</i></a>
                         <ul id="dropdown1" class="dropdown-content">
                             <li><a href="{{ route('webjur.beasiswa') }}">Beasiswa</a></li>
-                            <li><a href="#">Kegiatan</a></li>
+                            <li><a href="{{ route('webjur.kegiatan') }}"">Kegiatan</a></li>
                         </ul>
                     </li>
                     <li><a href="{{ route('webjur.sarpras') }}">Sarana dan Prasarana</a></li>
