@@ -13,10 +13,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{{ asset('css/materialize.css') }}" rel="stylesheet">
     {{--<link href="{{ asset('css/style.css') }}" rel="stylesheet">--}}
-<php/head>
+<head>
 <body>
 <div>
-    <div class="navbar-fixed">
         <nav role="navigation" style="background-color: #02062c">
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <div class="nav-wrapper">
@@ -27,7 +26,7 @@
                                     class="material-icons right">arrow_drop_down</i></a>
                         <ul id="dropdown1" class="dropdown-content">
                             <li><a href="{{ route('webjur.beasiswa') }}">Beasiswa</a></li>
-                            <li><a href="{{ route('webjur.kegiatan') }}"">Kegiatan</a></li>
+                            <li><a href="{{ route('webjur.kegiatan') }}">Kegiatan</a></li>
                         </ul>
                     </li>
                     <li><a href="{{ route('webjur.sarpras') }}">Sarana dan Prasarana</a></li>
@@ -35,29 +34,30 @@
                 </ul>
 
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#">Beranda</a></li>
+                    <li><a href="{{ route('webjur.beranda') }}">Beranda</a></li>
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i
                                             class="mdi-action-view-carousel"></i>Info</a>
-                                {{--<div class="collapsible-body">--}}
-                                    {{--<ul>--}}
-                                        {{--<li><a href="#">Beasiswa</a>--}}
-                                        {{--</li>--}}
-                                        {{--<li><a href="#">Kegiatan</a>--}}
-                                        {{--</li>--}}
-                                    {{--</ul>--}}
-                                {{--</div>--}}
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="{{ route('webjur.beasiswa') }}">Beasiswa</a>
+                                        </li>
+                                        <li><a href="{{ route('webjur.kegiatan') }}">Kegiatan</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Sarana dan Prasarana</a></li>
+                    <li><a href="{{ route('webjur.sarpras') }}">Sarana dan Prasarana</a></li>
                     <li><a href="#">Tentang Jurusan</a></li>
                 </ul>
 
             </div>
         </nav>
-    </div>
+
+</div>
 
     @yield('content')
 
@@ -73,6 +73,7 @@
 <!-- Scripts -->
 <script>
     $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $(".button-collapse").sideNav();
 </script>
 {{--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>--}}
 <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>

@@ -15,7 +15,7 @@ class InfoTable extends Migration
     {
         Schema::create('info', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('kategori');
+            $table->boolean('kategori');
             $table->text('judul');
             $table->text('deskripsi');
             $table->text('foto');
