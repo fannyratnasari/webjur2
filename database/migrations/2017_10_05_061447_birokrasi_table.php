@@ -16,10 +16,10 @@ class BirokrasiTable extends Migration
         Schema::create('birokrasi', function (Blueprint $table) {
             $table->increments('id');
             $table->string('jabatan');
-            $table->text('nama');
-            $table->integer('nip');
-            $table->text('foto');
-            $table->integer('nohp');
+            $table->string('nama');
+            $table->string('nip');
+            $table->string('foto');
+            $table->string('nohp');
         });
     }
 

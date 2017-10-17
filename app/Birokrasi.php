@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Birokrasi extends Model
 {
-    protected $table ='birokrasi_table';
+    protected $table ='birokrasi';
     public $timestamps = false;
     protected $fillable = ['jabatan','nama','nip','foto','nohp'];
 }

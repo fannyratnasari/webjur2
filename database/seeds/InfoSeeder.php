@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Info;
 class InfoSeeder extends Seeder
 {
     /**
@@ -11,8 +11,9 @@ class InfoSeeder extends Seeder
      */
     public function run()
     {
+        //kategori == true (beasiswa) == false (info)
         Info::create([
-            'kategori' => 'Beasiswa',
+            'kategori' => 'true',
             'judul' => 'Beasiswa PPA 2017',
             'deskripsi' => 'Pada tahun 2017 UT menerima alokasi dana Beasiswa Peningkatan Prestasi Akademik (PPA) dari Pemerintah melalui Direktorat Pembelajaran dan Kemahasiswaan, Kemristekdikti, untuk diberikan kepada mahasiswa yang mempunyai prestasi tinggi. Ketentuan dan persyaratan Beasiswa PPA adalah sebagai berikut.
             Ketentuan:
@@ -27,7 +28,7 @@ class InfoSeeder extends Seeder
         ]);
 
         Info::create([
-            'kategori' => 'Beasiswa',
+            'kategori' => 'true',
             'judul' => 'Beasiswa Bank Indonesia 2017',
             'deskripsi' => 'PEDOMAN BEASISWA BANK INDONESIA (BI) 2017
             1. SASARAN
@@ -73,7 +74,7 @@ class InfoSeeder extends Seeder
         ]);
 
         Info::create([
-            'kategori' => 'Beasiswa',
+            'kategori' => 'true',
             'judul' => 'Beasiswa BCA Finance 2017',
             'deskripsi' => '
             Pendaftaran beasiswa periode 2017  : 20 Mei – 31 Juli 2017

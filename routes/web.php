@@ -39,6 +39,7 @@ Route::get('/info/beasiswa',[
     'uses' => 'BeasiswaController@show',
     'as' => 'webjur.beasiswa'
 ]);
+
 Route::get('/info/kegiatan',[
     'uses' => 'KegiatanController@show',
     'as' => 'webjur.kegiatan'

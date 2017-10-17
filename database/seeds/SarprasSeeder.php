@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Sarpras;
 class SarprasSeeder extends Seeder
 {
     /**
@@ -11,7 +11,7 @@ class SarprasSeeder extends Seeder
      */
     public function run()
     {
-        Seeder::create([
+        Sarpras::create([
             'nama' => 'Laboratorium Jaringan Komputer',
             'deskripsi' => '
             Lokasi : Gedung A7 Lantai 2
@@ -20,7 +20,7 @@ class SarprasSeeder extends Seeder
             'foto' => 'labjarkom.jpg',
         ]);
 
-        Seeder::create([
+        Sarpras::create([
             'nama' => 'Laboratorium Multimedia Kreatif',
             'deskripsi' => '
             Lokasi : Gedung A7 Lantai 2
@@ -29,7 +29,7 @@ class SarprasSeeder extends Seeder
             'foto' => 'labmmk.jpg',
         ]);
 
-        Seeder::create([
+        Sarpras::create([
             'nama' => 'Laboratorium Rekayasa Perangkat Lunak',
             'deskripsi' => '
             Lokasi : Gedung A7 Lantai 2
@@ -38,7 +38,7 @@ class SarprasSeeder extends Seeder
             'foto' => 'labrpl.jpg',
         ]);
 
-        Seeder::create([
+        Sarpras::create([
             'nama' => 'Laboratorium Sitem Informasi',
             'deskripsi' => '
             Lokasi : Gedung A7 Lantai 3
@@ -47,7 +47,7 @@ class SarprasSeeder extends Seeder
             'foto' => 'labsi.jpg',
         ]);
 
-        Seeder::create([
+        Sarpras::create([
             'nama' => 'Ruang Baca',
             'deskripsi' => '
             Lokasi : Gedung A1 Lantai 1
