@@ -17,7 +17,7 @@
         <div class="col s12 m6 l12">
             <div class="card reveal card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/labsi.jpg')}}">
+                    <img class="activator" src="{{('image/sarpras/labsi.jpg')}}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Lab Sistem Informasi<i class="material-icons right">more_vert</i></span>
@@ -34,7 +34,7 @@
         <div class="col s12 m6 l12">
             <div class="card reveal card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/labmmk.jpg')}}">
+                    <img class="activator" src="{{('image/sarpras/labmmk.jpg')}}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Lab Multimedia Kreatif<i class="material-icons right">more_vert</i></span>
@@ -51,7 +51,7 @@
         <div class="col s12 m6 l12">
             <div class="card reveal card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/labjarkom.jpg')}}">
+                    <img class="activator" src="{{('image/sarpras/labjarkom.jpg')}}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Lab Jaringan Komputer<i class="material-icons right">more_vert</i></span>
@@ -68,7 +68,7 @@
         <div class="col s12 m6 l12">
             <div class="card reveal card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/labrpl.jpg')}}">
+                    <img class="activator" src="{{('image/sarpras/labrpl.jpg')}}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Lab Rekayasa Perangkat Lunak<i class="material-icons right">more_vert</i></span>
@@ -85,7 +85,7 @@
         <div class="col s12 m6 l12">
             <div class="card reveal card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/ruangbaca.jpg')}}">
+                    <img class="activator" src="{{('image/sarpras/ruangbaca.jpg')}}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Ruang Baca<i class="material-icons right">more_vert</i></span>

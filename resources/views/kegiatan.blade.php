@@ -11,7 +11,7 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/dialog.jpg") }} alt="blog-img">
+                            <img src={{ asset("image/info/dialog.jpg") }} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -28,7 +28,7 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/hmj.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/info/hmj.jpg")}} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -45,7 +45,7 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/futsal.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/info/futsal.jpg")}} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -65,7 +65,7 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/masade.jpg") }} alt="blog-img">
+                            <img src={{ asset("image/info/masade.jpg") }} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -82,7 +82,7 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/seminar.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/info/seminar.jpg")}} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
@@ -99,7 +99,7 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/wirausaha.jpg")}} alt="blog-img">
+                            <img src={{ asset("image/info/wirausaha.jpg")}} alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
