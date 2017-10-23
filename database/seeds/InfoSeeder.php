@@ -101,5 +101,12 @@ class InfoSeeder extends Seeder
             §  Tidak sedang menerima beasiswa dari pemberi beasiswa manapun',
             'foto' => 'BCA.jpg',
         ]);
+        Info::create([
+            'kategori'=>'false',
+            'judul'=>'Kunjungan Kerja',
+            'deskripsi' =>'Kunjungan kerja pada tahun 2016 dilakukan oleh Himpunan Mahasiswa Jurusan Teknik Informatika Universitas Negereri Surabaya
+            yang berkunjung ke Fakultas Teknik Informatika Universitas Brawijaya Malang.',
+            'foto'=> 'hmj.jpg'
+        ]);
     }
 }

@@ -52,22 +52,15 @@
         </div>
         <div class="section">
             <div class="row center">
+                @foreach($listinfo as $info)
                 <div class="col s6 ">
-                    <h5 class="light header">Beasiswa PPA</h5>
-                    <p class="caption">
-                        Beasiswa PPA 2017 dan BPP PPA 2017 ditujukan bagi mahasiswa aktif yang berada di jenjang S1/DIV atau mahasiswa D3. Ketentuan lebih lanjut tertera di persyaratan.</p>
-                    <img width="100%" src={{ asset("image/beasiswa/ppa.jpg") }} alt="">
+                    <h5 class="light header">{{$info->judul}}</h5>
+                    <p class="caption">{{str_limit($info->deskripsi,100,'...')}}</p>
+                    <img width="100%" src="{{ asset('image/beasiswa/'.$info->foto)}}">
                     <br><br>
-                    <a href="beasiswa" class="btn-large waves-effect waves-light orange" >Baca</a>
+                    {{--<a href="{{route('detailinfo',['id' => $info->id])}}" class="btn-large waves-effect waves-light orange">Baca</a>--}}
                 </div>
-                <div class="col s6 ">
-                    <h5 class="light header">Beasiswa BCA</h5>
-                    <p class="caption">
-                        Dalam upaya memajukan dunia pendidikan di Indonesia, BCA turut memberikan beasiswa kepada mahasiswa/mahasiswi berprestasi di bidangnya.</p>
-                        <img width="100%" src={{ asset("image/beasiswa/BCA.jpg") }} alt="">
-                    <br><br>
-                    <a href="" class="btn-large waves-effect waves-light orange" >Baca</a>
-                </div>
+                    @endforeach
             </div>
         </div>
         <div id="card-stats">

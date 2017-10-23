@@ -36,7 +36,7 @@ Route::get('/sarpras',[
 ]);
 
 Route::get('/info/beasiswa',[
-    'uses' => 'BeasiswaController@show',
+    'uses' => 'InfoController@showBeasiswa',
     'as' => 'webjur.beasiswa'
 ]);
 

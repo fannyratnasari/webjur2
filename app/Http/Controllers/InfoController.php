@@ -8,8 +8,13 @@ use App\Info;
 class InfoController extends Controller
 {
     public function show(){
-        return view( 'info',[
+        return view( '',[
             'listinfo' => Info::all()
         ]);
+    }
+
+    public function showBeasiswa(){
+
+        return view('beasiswa');
     }
 }
