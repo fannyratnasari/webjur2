@@ -18,6 +18,7 @@ class SarprasSeeder extends Seeder
             Jam Buka : 07.00 WIB - 16.00 WIB
             Fasilitas : Ruang Belajar, Mikrotik dan WiFi',
             'foto' => 'labjarkom.jpg',
+            'idhref' => 'labjarkom'
         ]);
 
         Sarpras::create([
@@ -27,6 +28,7 @@ class SarprasSeeder extends Seeder
             Jam Buka : 07.00 WIB - 20.00 WIB
             Fasilitas : Ruang Multimedia, Ruang Belajar dan WiFi',
             'foto' => 'labmmk.jpg',
+            'idhref' => 'labmmk'
         ]);
 
         Sarpras::create([
@@ -36,6 +38,7 @@ class SarprasSeeder extends Seeder
             Jam Buka : 07.00 WIB - 16.00 WIB
             Fasilitas : Ruang Belajar dan WiFi',
             'foto' => 'labrpl.jpg',
+            'idhref' => 'labrpl'
         ]);
 
         Sarpras::create([
@@ -45,6 +48,7 @@ class SarprasSeeder extends Seeder
             Jam Buka : 07.00 WIB - 16.00 WIB
             Fasilitas : Ruang Belajar,Personal Computer dan WiFi',
             'foto' => 'labsi.jpg',
+            'idhref' => 'labsi'
         ]);
 
         Sarpras::create([
@@ -54,6 +58,7 @@ class SarprasSeeder extends Seeder
             Jam Buka : 07.00 WIB - 16.00 WIB
             Fasilitas : Tempat Membaca, Berbagai Buku',
             'foto' => 'ruangbaca.jpg',
+            'idhref' => 'ruangbaca'
         ]);
     }
 }

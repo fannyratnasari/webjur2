@@ -8,5 +8,5 @@ class Sarpras extends Model
 {
     protected $table ='sarpras';
     public $timestamps = false;
-    protected $fillable = ['nama','deskripsi','foto'];
+    protected $fillable = ['nama','deskripsi','foto','idhref'];
 }

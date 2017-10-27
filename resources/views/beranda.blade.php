@@ -32,7 +32,7 @@
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons medium">location_city</i></h2>
+                        <h2 class="center ligh  t-blue-text"><i class="material-icons medium">location_city</i></h2>
                         <h5 class="center">Sarana dan Prasana</h5>
 
                         <p class="light">Jurusan Teknik Informatika memiliki berbagai saran dan prasarana yang memadai. Lihat segala fasilitas yang dapat anda nikmati di Jurusan Teknik Informatika Unesa</p>

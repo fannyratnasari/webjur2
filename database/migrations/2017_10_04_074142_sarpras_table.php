@@ -16,6 +16,7 @@ class SarprasTable extends Migration
             $table->string('nama');
             $table->text('deskripsi');
             $table->string('foto');
+            $table->string('idhref');
         });
     }
 

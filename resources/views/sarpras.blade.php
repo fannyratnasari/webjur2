@@ -13,91 +13,26 @@
         </ul>
     </div>
 
-    <div class="row" id="labsi">
+    @foreach($listsarpras as $sarpras)
+    <div class="row" id="{{$sarpras->idhref}}">
         <div class="col s12 m6 l12">
             <div class="card reveal card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/sarpras/labsi.jpg')}}">
+                    <img class="activator" src="{{asset('image/sarpras/'.$sarpras->foto)}}">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Lab Sistem Informasi<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
+                    <span class="card-title activator grey-text text-darken-4">{{$sarpras->nama}}<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">Klik untuk melihat deskripsi</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Lab Sistem informasi<i class="material-icons right">close</i></span>
-                    <p>Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla.</p>
+                    <span class="card-title grey-text text-darken-4">{{$sarpras->nama}}<i class="material-icons right">close</i></span>
+                    <p>{{$sarpras->deskripsi}}</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row" id="labmmk">
-        <div class="col s12 m6 l12">
-            <div class="card reveal card-panel hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/sarpras/labmmk.jpg')}}">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Lab Multimedia Kreatif<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Lab Multimedia Kreatif<i class="material-icons right">close</i></span>
-                    <p>Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row" id="labjarkom">
-        <div class="col s12 m6 l12">
-            <div class="card reveal card-panel hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/sarpras/labjarkom.jpg')}}">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Lab Jaringan Komputer<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Lab Jaringan Komputer<i class="material-icons right">close</i></span>
-                    <p>Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row" id="labrpl">
-        <div class="col s12 m6 l12">
-            <div class="card reveal card-panel hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/sarpras/labrpl.jpg')}}">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Lab Rekayasa Perangkat Lunak<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Lab Rekayasa Perangkat Lunak<i class="material-icons right">close</i></span>
-                    <p>Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row" id="ruangbaca">
-        <div class="col s12 m6 l12">
-            <div class="card reveal card-panel hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{('image/sarpras/ruangbaca.jpg')}}">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Ruang Baca<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Ruang Baca<i class="material-icons right">close</i></span>
-                    <p>Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    @endforeach
+
 </div>
 
 @endsection

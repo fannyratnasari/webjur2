@@ -17,10 +17,6 @@ Route::get('/beasiswa', function () {
     return view('beasiswa');
 });
 
-Route::get('/sarpras', function () {
-    return view('sarpras');
-});
-
 Route::get('/coba', function () {
     return view('coba');
 });
@@ -31,7 +27,7 @@ Route::get('/beranda',[
 ]);
 
 Route::get('/sarpras',[
-    'uses' => 'SarprasController@show',
+    'uses' => 'WebjurController@showSarpras',
     'as' => 'webjur.sarpras'
 ]);
 
