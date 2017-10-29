@@ -108,5 +108,29 @@ class InfoSeeder extends Seeder
             yang berkunjung ke Fakultas Teknik Informatika Universitas Brawijaya Malang.',
             'foto'=> 'hmj.jpg'
         ]);
+        Info::create([
+            'kategori'=>'false',
+            'judul'=>'Dialog Jurusan',
+            'deskripsi' =>'Dialog Jurusan Teknik Informatika adalah kegiatan rutin yang dilaksanakan oleh Himpunan Mahasiswa Jurusan Teknik Informatika
+            sebagai wadah perantara mahasiswa dan birokrasi mengenai segala peraturan maupun hal-hal yang berkaitan dengan Jurusan Teknik Informatika',
+            'foto'=> 'dialog.jpg'
+        ]);
+        Info::create([
+            'kategori'=>'false',
+            'judul'=>'Informatic Champion',
+            'deskripsi' =>'Informatic Champions merupakan lomba rutinan Jurusan Teknik Informatika. Informatic Champions
+            atau disingkat IC merupakan wadah apresiasi Jurusan Teknik Informatika kepada kalangan mahasiswa yang berprestasi
+            dalam bidang IT',
+            'foto'=> 'masade.jpg'
+        ]);
+        Info::create([
+            'kategori'=>'false',
+            'judul'=>'Pekan Olahraga Jurusan',
+            'deskripsi' =>'Pekan Olahraga Jurusan atau yang sering disebut dengan Porjur merupakan ajang perlombaan
+            mengenai bakat mahasiswa Jurusan Teknik Informatika dibidang keolahragaan. Kegiatan ini merupakan
+            Program Kerja Himpunan Mahasiswa Jurusan Teknik Informatika UNESA Departement Minat dan Bakat yang diselenggarakan
+            setahun sekali',
+            'foto'=> 'futsal.jpg'
+        ]);
     }
 }

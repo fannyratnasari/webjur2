@@ -54,7 +54,7 @@
             <div class="row center">
                 @foreach($listinfo as $info)
                 <div class="col s6 ">
-                    <h5 class="light header">{{$info->judul}}</h5>
+                    <a style="font-size: 25px" href="" class="light header">{{$info->judul}}</a>
                     <p class="caption">{{str_limit($info->deskripsi,100,'...')}}</p>
                     <img width="100%" src="{{ asset('image/beasiswa/'.$info->foto)}}">
                     <br><br>
@@ -65,117 +65,43 @@
         </div>
         <div id="card-stats">
             <div class="row">
-                <div class="col s12 m6 l3">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/info/masade.jpg") }} alt="blog-img">
-                        </div>
-                        <div class="card-content">
-                            <p class="row">
-                                <span><a href="">Penyerahan Tropi</a></span>
-                                <br>
-                                <span>18 Juni, 2015</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/info/hmj.jpg") }} alt="blog-img">
-                        </div>
-                        <div class="card-content">
-                            <p class="row">
-                                <span><a href="">Kunjungan Kerja HMJ</a></span>
-                                <br>
-                                <span>20 November, 2016</span>
-                            </p>
+                @foreach($listkegiatan as $kegiatan)
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img src="{{ asset('image/info/'.$kegiatan->foto)}}" alt="blog-img">
+                                {{--<img src={{ asset("image/info/.$kegiatan->foto") }} alt="blog-img">--}}
+                            </div>
+                            <div class="card-content">
+                                <p class="row">
+                                    <span><a href="">{{$kegiatan->judul}}</a></span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/info/futsal.jpg") }} alt="blog-img">
-                        </div>
-                        <div class="card-content">
-                            <p class="row">
-                                <span><a href="">Futsal TI</a></span>
-                                <br>
-                                <span>15 Oktober 2016</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/info/dialog.jpg") }} alt="blog-img">
-                        </div>
-                        <div class="card-content">
-                            <p class="row">
-                                <span><a href="">Dialog Jurusan</a></span>
-                                <br>
-                                <span>12 Februari 2017</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
         <div class="row">
-            <!-- blog card -->
+            @foreach($listbeasiswa as $beasiswa)
             <div class="col s12 m12 l4">
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/beasiswa/bi.jpg") }} alt="blog-img">
+                            <img src="{{ asset('image/beasiswa/'.$beasiswa->foto)}}" alt="blog-img">
                         </div>
                         <div class="card-content">
                             <p class="row">
                                 <span class="left"><a href="">Info</a></span>
-                                <span class="right">18th June, 2015</span>
+                                {{--<span class="right">18th June, 2015</span>--}}
                             </p>
-                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Beasiswa Bank Indonesia</a>
+                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">{{$beasiswa->judul}}</a>
                             </h4>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m12 l4">
-                <div class="blog-card" >
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/beasiswa/ppa.jpg")}} alt="blog-img">
-                        </div>
-                        <div class="card-content">
-                            <p class="row">
-                                <span class="left"><a href="">Info</a></span>
-                                <span class="right">18th June, 2015</span>
-                            </p>
-                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Beasiswa PPA</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m12 l4">
-                <div class="blog-card" >
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{ asset("image/info/komatik.png")}} alt="blog-img">
-                        </div>
-                        <div class="card-content">
-                            <p class="row">
-                                <span class="left"><a href="">Info</a></span>
-                                <span class="right">18th June, 2015</span>
-                            </p>
-                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Sosialisasi Komatik</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 @endsection
