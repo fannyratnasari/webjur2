@@ -13,8 +13,9 @@ class InfoController extends Controller
         ]);
     }
 
-    public function showBeasiswa(){
+    public function showDetail($id){
+        $info = Info::find($id);
+        return view('isi')->with('info', $info);
 
-        return view('beasiswa');
     }
 }

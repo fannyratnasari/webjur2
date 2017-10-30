@@ -54,9 +54,9 @@
             <div class="row center">
                 @foreach($listinfo as $info)
                 <div class="col s6 ">
-                    <a style="font-size: 25px" href="" class="light header">{{$info->judul}}</a>
+                    <a style="font-size: 25px" href="{{route('info.detail',['id' => $info->id])}}" class="light header">{{$info->judul}}</a>
                     <p class="caption">{{str_limit($info->deskripsi,100,'...')}}</p>
-                    <img width="100%" src="{{ asset('image/beasiswa/'.$info->foto)}}">
+                    <a href="{{route('info.detail',['id' => $info->id])}}"><img width="100%" src="{{ asset('image/beasiswa/'.$info->foto)}}"></a>
                     <br><br>
                     {{--<a href="{{route('detailinfo',['id' => $info->id])}}" class="btn-large waves-effect waves-light orange">Baca</a>--}}
                 </div>
@@ -69,12 +69,12 @@
                     <div class="col s12 m6 l3">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img src="{{ asset('image/info/'.$kegiatan->foto)}}" alt="blog-img">
+                                <a href="{{route('info.detail',['id' => $kegiatan->id])}}"><img src="{{ asset('image/info/'.$kegiatan->foto)}}" alt="blog-img"></a>
                                 {{--<img src={{ asset("image/info/.$kegiatan->foto") }} alt="blog-img">--}}
                             </div>
                             <div class="card-content">
                                 <p class="row">
-                                    <span><a href="">{{$kegiatan->judul}}</a></span>
+                                    <span><a href="{{route('info.detail',['id' => $kegiatan->id])}}">{{$kegiatan->judul}}</a></span>
                                 </p>
                             </div>
                         </div>
@@ -88,14 +88,14 @@
                 <div class="blog-card" >
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src="{{ asset('image/beasiswa/'.$beasiswa->foto)}}" alt="blog-img">
+                            <a href="{{route('info.detail',['id' => $beasiswa->id])}}"><img src="{{ asset('image/beasiswa/'.$beasiswa->foto)}}" alt="blog-img"></a>
                         </div>
                         <div class="card-content">
                             <p class="row">
                                 <span class="left"><a href="">Info</a></span>
                                 {{--<span class="right">18th June, 2015</span>--}}
                             </p>
-                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">{{$beasiswa->judul}}</a>
+                            <h4 class="card-title grey-text text-darken-4"><a href="{{route('info.detail',['id' => $beasiswa->id])}}" class="grey-text text-darken-4">{{$beasiswa->judul}}</a>
                             </h4>
                         </div>
                     </div>

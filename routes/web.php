@@ -40,3 +40,8 @@ Route::get('/info/kegiatan',[
     'uses' => 'KegiatanController@show',
     'as' => 'webjur.kegiatan'
 ]);
+
+Route::get('/info/detail/{id}',[
+    'uses' => 'InfoController@showDetail',
+    'as' => 'info.detail'
+]);
