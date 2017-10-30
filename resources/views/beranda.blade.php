@@ -69,7 +69,7 @@
                     <div class="col s12 m6 l3">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <a href="{{route('info.detail',['id' => $kegiatan->id])}}"><img src="{{ asset('image/info/'.$kegiatan->foto)}}" alt="blog-img"></a>
+                                <a href="{{route('info.detail',['id' => $kegiatan->id])}}"><img src="{{ asset('image/beasiswa/'.$kegiatan->foto)}}" alt="blog-img"></a>
                                 {{--<img src={{ asset("image/info/.$kegiatan->foto") }} alt="blog-img">--}}
                             </div>
                             <div class="card-content">
