@@ -13,6 +13,10 @@
 
 Route::get('/', 'WebjurController@index');
 
+Route::get('/birokrasi',function (){
+    return view('birokrasi');
+});
+
 Route::get('/beasiswa', function () {
     return view('beasiswa');
 });
